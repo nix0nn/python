@@ -2,7 +2,7 @@ def int_func(word):
     for x in word:
         if (ord(x)) < 97 or (ord(x)) > 122:
             result = None
-            break
+            return result
         else:
             result = word.title()
     return result
