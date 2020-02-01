@@ -4,7 +4,7 @@ def delenie(x, y):
 while True:
     x = int(input('Введите значение X: '))
     y = int(input('Введите значение Y: '))
-    if y == 0:
+    if not y:
         print('Делить на ноль нельзя!!!')
     else: break
 
