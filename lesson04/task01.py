@@ -1,10 +1,9 @@
 from sys import argv
 
-production_in_hours = int(argv[1])
-rate_per_hour = int(argv[2])
-premium = int(argv[3])
 
-result = (production_in_hours * rate_per_hour) + premium
+def payroll_preparation(production_in_hours, rate_per_hour, bonus):
+    result = (production_in_hours * rate_per_hour) + bonus
+    return result
 
-print("Расчет заработной платы сотрудника:")
-print(result)
+
+print(payroll_preparation(int(argv[1]), int(argv[2]), int(argv[3])))
