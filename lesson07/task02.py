@@ -1,9 +1,10 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
-class Clothes:
+class Clothes(ABC):
     def __init__(self, name):
         self.name = name
+
     @abstractmethod
     def consumption(self):
         pass
